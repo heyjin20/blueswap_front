@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="279" height="172" viewBox="0 0 279 172">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <path fill="#B0D2FF" d="M109.82 181.355c30.448 0 55.132-24.624 55.132-55 0-30.375-22.96-80.582-53.41-80.582-30.448 0-91.59 84.365-91.59 114.74 0 30.376 59.418 20.842 89.867 20.842z" transform="translate(-37 -92) translate(21 66) scale(-1 1) rotate(-20 0 638.592)"/>
+                <path fill="#DEECFF" d="M182.21 168.11c38.008 0 73.79-24.4 73.79-62.328C256 67.854 172.674 36.5 134.665 36.5 96.657 36.5 75 110.505 75 148.433c0 37.928 69.2 19.678 107.21 19.678z" transform="translate(-37 -92) translate(21 66) rotate(30 165.5 104.5)"/>
+                <path fill="#388AF7" d="M250.216 185.45c34.65 0 62.737-28.118 62.737-62.803 0-34.686-63.915-82.412-98.564-82.412-34.649 0-66.436 86.73-66.436 121.416 0 34.686 67.615 23.8 102.263 23.8z" opacity=".208" transform="translate(-37 -92) translate(21 66) rotate(52 230.453 113.652)"/>
+                <text font-family="Nunito-ExtraBold, Nunito" font-size="28" font-weight="700" letter-spacing="-.7" transform="translate(-37 -92) translate(21 66)">
+                    <tspan x="49" y="110" fill="#2C2C2C">Stake</tspan> <tspan x="121.128" y="110.14" fill="#2C2C2C" font-family="Nunito-Bold, Nunito" font-weight="bold"> </tspan> <tspan x="127.82" y="110" fill="#2C2C2C">LP Token</tspan> <tspan x="49" y="138" fill="#2C2C2C">To earn </tspan> <tspan x="150.164" y="138" fill="#388AF7">BLUE</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

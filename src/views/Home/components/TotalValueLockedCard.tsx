@@ -4,7 +4,7 @@ import { Card, CardBody, Heading, Skeleton, Text } from '@pancakeswap-libs/uikit
 import useI18n from 'hooks/useI18n'
 import { useGetStats } from 'hooks/api'
 import { useTotalValue } from '../../../state/hooks'
-import CardValue from './CardValue'
+import TvlValue from './TvlValue'
 
 const StyledTotalValueLockedCard = styled(Card)`
   align-items: center;
@@ -15,8 +15,19 @@ const StyledTotalValueLockedCard = styled(Card)`
 `
 
 const SubTitle = styled.div`
-  font-family: 'Nunito';
+  font-family: Nunito Black;
   color: #414859;
+`
+
+const TvlTitle = styled.div`
+  color: '#388af7';
+  font-family: 'Nunito Black';
+  fontweight: '900';
+`
+
+const TvlHeader = styled(Heading)`
+  margin-bottom: 0px;
+  line-height: 30px;
 `
 
 const TotalValueLockedCard = () => {
@@ -28,15 +39,17 @@ const TotalValueLockedCard = () => {
   return (
     <StyledTotalValueLockedCard>
       <CardBody>
-        <Heading size="lg" mb="24px">
+        <TvlHeader size="lg" mb="24px">
           <SubTitle>{TranslateString(999, 'Total Value Locked (TVL)')}</SubTitle>
-        </Heading>
+        </TvlHeader>
         <>
           {/* <Heading size="xl">{`$${tvl}`}</Heading> */}
           {/* <Heading size="xl"> */}
-          <CardValue value={totalValue.toNumber()} prefix="$" decimals={2} />
+          <TvlValue value={totalValue.toNumber()} prefix="$" decimals={2} />
           {/* </Heading> */}
-          <Text color="textSubtle">{TranslateString(999, 'Across all Farms and Pools')}</Text>
+          <Text style={{ fontFamily: 'Nunito SemiBold', fontSize: '16px', color: '#414859' }}>
+            {TranslateString(999, 'Across all Farms and Pools')}
+          </Text>
         </>
       </CardBody>
     </StyledTotalValueLockedCard>

@@ -25,7 +25,7 @@ const Row = styled.div`
 `
 
 const SubTitle = styled.div`
-  font-family: 'Nunito';
+  font-family: Nunito Black;
   color: #414859;
 `
 

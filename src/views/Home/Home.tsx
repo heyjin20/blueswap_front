@@ -9,31 +9,40 @@ import CakeStats from './components/CakeStats'
 import TotalValueLockedCard from './components/TotalValueLockedCard'
 import TwitterCard from './components/TwitterCard'
 
-const Hero = styled.div`
-  align-items: center;
-  background-image: url('/images/egg/mobile-hero-img.png');
-  background-repeat: no-repeat;
-  background-position: top center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin: auto;
-  margin-bottom: 32px;
-  padding-top: 116px;
+const MainDiv = styled.div`
+  width: 100%;
   text-align: center;
-  height: 200px;
-  padding-top: 0;
-  background-position: center center, center center;
-
-  ${({ theme }) => theme.mediaQueries.lg} {
-    background-image: url('/images/egg/group-3.png');
-    background-position: left center, right center;
-    padding-top: 0;
-    width: 1200px;
-    height: 560px;
-    margin-left: -120px;
-  }
 `
+
+const Hero = styled.img`
+  width: 80%;
+`
+
+// const Hero = styled.div`
+//   align-items: center;
+//   background-image: url('/images/blue/mobile-hero-img.png');
+//   background-repeat: no-repeat;
+//   background-position: top center;
+//   display: flex;
+//   justify-content: center;
+//   flex-direction: column;
+//   margin: auto;
+//   margin-bottom: 32px;
+//   padding-top: 116px;
+//   text-align: center;
+//   height: 200px;
+//   padding-top: 0;
+//   background-position: center center, center center;
+
+//   ${({ theme }) => theme.mediaQueries.lg} {
+//     background-image: url('/images/blue/group-3.png');
+//     background-position: left center, right center;
+//     padding-top: 0;
+//     width: 1200px;
+//     height: 560px;
+//     margin-left: -120px;
+//   }
+// `
 
 const Cards = styled(BaseLayout)`
   align-items: stretch;
@@ -61,23 +70,24 @@ const Cards = styled(BaseLayout)`
 const Home: React.FC = () => {
   const TranslateString = useI18n()
 
+  Hero.defaultProps = {
+    src: window.innerWidth <= 760 ? '/images/blue/mobile-hero-img.png' : '/images/blue/pc-hero-img.png',
+  }
+
   return (
-    <Page>
-      <Hero>
-        {/* <Heading as="h1" size="xl" mb="24px" color="secondary">
-          {TranslateString(576, 'Blue Finance')}
-        </Heading>
-        <Text>{TranslateString(578, 'Top 3 best DEFI app on Binance Smart Chain.')}</Text> */}
-      </Hero>
-      <div>
-        <Cards>
-          <FarmStakingCard />
-          <TwitterCard />
-          <CakeStats />
-          <TotalValueLockedCard />
-        </Cards>
-      </div>
-    </Page>
+    <MainDiv>
+      <Hero />
+      <Page>
+        <div style={{ textAlign: 'initial' }}>
+          <Cards>
+            <FarmStakingCard />
+            <TwitterCard />
+            <CakeStats />
+            <TotalValueLockedCard />
+          </Cards>
+        </div>
+      </Page>
+    </MainDiv>
   )
 }
 

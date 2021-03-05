@@ -54,20 +54,8 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'TokenInfo',
-        href: 'https://pancakeswap.info/token/0xF952Fc3ca7325Cc27D15885d37117676d25BfdA6',
+        href: 'https://pancakeswap.info/token/0x111B750C3aBf9835d8c4631DdE0FC7ECd1A60f20',
       },
-      // {
-      //   label: 'CoinGecko',
-      //   href: 'https://www.coingecko.com/en/coins/goose-finance',
-      // },
-      // {
-      //   label: 'CoinMarketCap',
-      //   href: 'https://coinmarketcap.com/currencies/goose-finance/',
-      // },
-      // {
-      //   label: 'AstroTools',
-      //   href: 'https://app.astrotools.io/pancake-pair-explorer/0x19e7cbecdd23a16dfa5573df54d98f7caae03019',
-      // },
     ],
   },
   {
@@ -76,16 +64,16 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Github',
-        href: 'https://github.com/goosedefi/',
+        href: 'https://github.com/Palette-Finance/',
       },
       {
         label: 'Docs',
-        href: 'https://goosedefi.gitbook.io/goose-finance/',
+        href: 'https://docs.blueswap.finance/',
       },
-      {
-        label: 'Blog',
-        href: 'https://medium.com/@palettefinance/',
-      },
+      // {
+      //   label: 'Blog',
+      //   href: 'https://docs.blueswap.finance/',
+      // },
     ],
   },
   // {

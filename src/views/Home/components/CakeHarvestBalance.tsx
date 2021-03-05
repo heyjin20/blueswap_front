@@ -6,13 +6,16 @@ import useI18n from 'hooks/useI18n'
 import useAllEarnings from 'hooks/useAllEarnings'
 import CardValue from './CardValue'
 
-const CakeHarvestBalance = ({earningsSum}) => {
+const CakeHarvestBalance = ({ earningsSum }) => {
   const TranslateString = useI18n()
   const { account } = useWallet()
 
   if (!account) {
     return (
-      <Text color="textDisabled" style={{ lineHeight: '60px' }}>
+      <Text
+        color="textDisabled"
+        style={{ lineHeight: '35px', color: '#000', fontFamily: 'Rubik Medium', letterSpacing: '1.49px' }}
+      >
         {TranslateString(298, 'Locked')}
       </Text>
     )

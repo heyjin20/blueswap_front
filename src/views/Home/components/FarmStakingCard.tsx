@@ -14,6 +14,7 @@ import useTokenBalance from '../../../hooks/useTokenBalance'
 import { getCakeAddress } from '../../../utils/addressHelpers'
 import useAllEarnings from '../../../hooks/useAllEarnings'
 import { getBalanceNumber } from '../../../utils/formatBalance'
+import '../../../fonts.css'
 
 const StyledFarmStakingCard = styled(Card)`
   border: solid 1px #deecff;
@@ -27,7 +28,7 @@ const Block = styled.div`
 `
 
 const CardImage = styled.img`
-  margin-bottom: 16px;
+  margin-right: 10px;
 `
 
 const Label = styled.div`
@@ -35,17 +36,34 @@ const Label = styled.div`
   font-size: 14px;
 `
 
+const Row = styled.div`
+  align-items: center;
+  display: flex;
+  font-size: 14px;
+  margin-bottom: 25px;
+`
+
 const Actions = styled.div`
   margin-top: 24px;
 `
 
-const SubTitle = styled.div`
-  font-family: 'Nunito';
+const Title = styled.div`
+  font-family: Nunito Black;
   color: #414859;
 `
 
-const ButtonBackgroundColor = styled.div`
-  background-color: #388af7;
+const SubTitle = styled.div`
+  font-family: Rubik Regular;
+  font-size: 15px;
+  letter-spacing: 1.49px;
+  color: #858a90;
+`
+
+const SubContent = styled.div`
+  font-family: Rubik Medium;
+  font-size: 16px;
+  letter-spacing: 1.49px;
+  color: #000000;
 `
 
 const FarmedStakingCard = () => {
@@ -78,18 +96,22 @@ const FarmedStakingCard = () => {
     <StyledFarmStakingCard>
       <CardBody>
         <Heading size="lg" mb="24px">
-          <SubTitle>{TranslateString(542, 'Farms & Staking')}</SubTitle>
+          <Title>{TranslateString(542, 'Farms & Staking')}</Title>
         </Heading>
-        <CardImage src="/images/egg/2.png" alt="cake logo" width={32} height={32} />
+        <Row>
+          <CardImage src="/images/blue/2.png" alt="cake logo" width={32} height={32} />
+          <SubTitle>BLUE TOKEN(PLT BLUE)</SubTitle>
+        </Row>
         <Block>
-          <Label>{TranslateString(544, 'BLUE to Harvest')}</Label>
+          <SubTitle>{TranslateString(544, 'BLUE to Harvest')}</SubTitle>
           <CakeHarvestBalance earningsSum={earningsSum} />
-          <Label>~${(eggPrice * earningsSum).toFixed(2)}</Label>
+          <SubContent>~${(eggPrice * earningsSum).toFixed(2)}</SubContent>
         </Block>
+        <br />
         <Block>
-          <Label>{TranslateString(546, 'BLUE in Wallet')}</Label>
+          <SubTitle>{TranslateString(546, 'BLUE in Wallet')}</SubTitle>
           <CakeWalletBalance cakeBalance={cakeBalance} />
-          <Label>~${(eggPrice * cakeBalance).toFixed(2)}</Label>
+          <SubContent>~${(eggPrice * cakeBalance).toFixed(2)}</SubContent>
         </Block>
         <Actions>
           {account ? (

@@ -12,7 +12,7 @@ const UnlockButton = (props) => {
     <Button
       onClick={onPresentConnectModal}
       {...props}
-      style={{ fontFamily: 'Rubik-Bold', fontSize: '16px', letterSpacing: '1.49px', fontWeight: '700' }}
+      style={{ fontFamily: 'Rubik Bold', fontSize: '16px', letterSpacing: '1.49px', fontWeight: 'bold' }}
     >
       {TranslateString(292, 'Unlock Wallet')}
     </Button>

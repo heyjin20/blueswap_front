@@ -1,4 +1,5 @@
 import React, { useEffect, useCallback, useState } from 'react'
+import styled from 'styled-components'
 import { Route, useRouteMatch } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import BigNumber from 'bignumber.js'
@@ -17,6 +18,10 @@ import FarmCard, { FarmWithStakedValue } from './components/FarmCard/FarmCard'
 import FarmTabButtons from './components/FarmTabButtons'
 import Divider from './components/Divider'
 
+const StakeHero = styled.img`
+  width: 100%;
+`
+
 export interface FarmsProps {
   tokenMode?: boolean
 }
@@ -29,6 +34,18 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
   const bnbPrice = usePriceBnbBusd()
   const { account, ethereum }: { account: string; ethereum: provider } = useWallet()
   const { tokenMode } = farmsProps
+
+  let currentImg = ''
+
+  if (tokenMode) {
+    currentImg = window.innerWidth <= 760 ? '/images/blue/mobile-pool-hero-img.png' : '/images/blue/pool-hero-img.png'
+  } else {
+    currentImg = window.innerWidth <= 760 ? '/images/blue/mobile-stake-hero-img.png' : '/images/blue/stake-hero-img.png'
+  }
+
+  StakeHero.defaultProps = {
+    src: currentImg,
+  }
 
   const dispatch = useDispatch()
   const { fastRefresh } = useRefresh()
@@ -92,29 +109,25 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
   )
 
   return (
-    <Page>
-      <Heading as="h1" size="lg" color="primary" mb="50px" style={{ textAlign: 'center' }}>
-        {tokenMode
-          ? TranslateString(10002, 'Stake tokens to earn BLUE')
-          : TranslateString(320, 'Stake LP tokens to earn BLUE')}
-      </Heading>
-      <Heading as="h2" color="secondary" mb="50px" style={{ textAlign: 'center' }}>
-        {TranslateString(10000, 'Deposit Fee will be used to buyback BLUE')}
-      </Heading>
-      <FarmTabButtons stakedOnly={stakedOnly} setStakedOnly={setStakedOnly} />
-      <div>
-        <Divider />
-        <FlexLayout>
-          <Route exact path={`${path}`}>
-            {stakedOnly ? farmsList(stakedOnlyFarms, false) : farmsList(activeFarms, false)}
-          </Route>
-          <Route exact path={`${path}/history`}>
-            {farmsList(inactiveFarms, true)}
-          </Route>
-        </FlexLayout>
-      </div>
-      {/* <Image src="/images/egg/8.png" alt="illustration" width={1352} height={587} responsive /> */}
-    </Page>
+    <div>
+      {tokenMode}
+      <StakeHero />
+      <Page>
+        <FarmTabButtons stakedOnly={stakedOnly} setStakedOnly={setStakedOnly} />
+        <div>
+          <Divider />
+          <FlexLayout>
+            <Route exact path={`${path}`}>
+              {stakedOnly ? farmsList(stakedOnlyFarms, false) : farmsList(activeFarms, false)}
+            </Route>
+            <Route exact path={`${path}/history`}>
+              {farmsList(inactiveFarms, true)}
+            </Route>
+          </FlexLayout>
+        </div>
+        {/* <Image src="/images/egg/8.png" alt="illustration" width={1352} height={587} responsive /> */}
+      </Page>
+    </div>
   )
 }
 

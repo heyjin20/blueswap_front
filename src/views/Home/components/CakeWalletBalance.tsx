@@ -13,7 +13,10 @@ const CakeWalletBalance = ({ cakeBalance }) => {
 
   if (!account) {
     return (
-      <Text color="textDisabled" style={{ lineHeight: '36px' }}>
+      <Text
+        color="textDisabled"
+        style={{ lineHeight: '35px', color: '#000', fontFamily: 'Rubik Medium', letterSpacing: '1.49px' }}
+      >
         {TranslateString(298, 'Locked')}
       </Text>
     )

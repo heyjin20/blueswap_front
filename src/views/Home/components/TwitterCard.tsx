@@ -26,6 +26,7 @@ const Row = styled.div`
 
 const SubTitle = styled.div`
   font-family: 'Nunito';
+  color: #414859;
 `
 
 const TwitterCard = () => {

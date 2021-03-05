@@ -22,7 +22,7 @@ const Wrapper = styled.div`
 
 const StyledLinkExternal = styled(LinkExternal)`
   text-decoration: none;
-  font-weight: normal;
+  font-weight: 700;
   color: ${({ theme }) => theme.colors.text};
   display: flex;
   align-items: center;
@@ -51,24 +51,36 @@ const DetailsSection: React.FC<ExpandableSectionProps> = ({
   return (
     <Wrapper>
       <Flex justifyContent="space-between">
-        <Text>{TranslateString(316, 'Stake')}:</Text>
-        <StyledLinkExternal href={
-          isTokenOnly ?
-            `https://exchange.goosedefi.com/#/swap/${tokenAddresses[process.env.REACT_APP_CHAIN_ID]}`
-            :
-          `https://exchange.goosedefi.com/#/add/${liquidityUrlPathParts}`
-        }>
+        <Text style={{ fontSize: '16px', color: '#858a90', letterSpacing: '1.49px', lineHeight: '1.63' }}>
+          {TranslateString(316, 'Deposit')}:
+        </Text>
+        <StyledLinkExternal
+          href={
+            isTokenOnly
+              ? `https://exchange.goosedefi.com/#/swap/${tokenAddresses[process.env.REACT_APP_CHAIN_ID]}`
+              : `https://exchange.goosedefi.com/#/add/${liquidityUrlPathParts}`
+          }
+        >
           {lpLabel}
         </StyledLinkExternal>
       </Flex>
       {!removed && (
         <Flex justifyContent="space-between">
-          <Text>{TranslateString(23, 'Total Liquidity')}:</Text>
-          <Text>{totalValueFormated}</Text>
+          <Text style={{ fontSize: '16px', color: '#858a90', letterSpacing: '1.49px', lineHeight: '1.63' }}>
+            {TranslateString(23, 'Total Liquidity')}:
+          </Text>
+          <Text bold style={{ fontSize: '16px', color: '#000000', letterSpacing: '1.49px', lineHeight: '1.63' }}>
+            {totalValueFormated}
+          </Text>
         </Flex>
       )}
       <Flex justifyContent="flex-start">
-        <Link external href={bscScanAddress} bold={false}>
+        <Link
+          external
+          href={bscScanAddress}
+          bold={false}
+          style={{ color: '#b9b9b9', fontSize: '14px', marginTop: '5px' }}
+        >
           {TranslateString(356, 'View on BscScan')}
         </Link>
       </Flex>

@@ -16,6 +16,7 @@ const StyledTotalValueLockedCard = styled(Card)`
 
 const SubTitle = styled.div`
   font-family: 'Nunito';
+  color: #414859;
 `
 
 const TotalValueLockedCard = () => {

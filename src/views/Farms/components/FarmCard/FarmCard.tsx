@@ -60,7 +60,7 @@ const FCard = styled.div`
   align-self: baseline;
   background: ${(props) => props.theme.card.background};
   border-radius: 32px;
-  border: solid 1px #388af7;
+  border: solid 2px #388af7;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -133,7 +133,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
 
   return (
     <FCard>
-      {farm.tokenSymbol === 'BLUE' && <StyledCardAccent />}
+      {/* {farm.tokenSymbol === 'BLUE' && <StyledCardAccent />} */}
       <CardHeading
         lpLabel={lpLabel}
         multiplier={farm.multiplier}
@@ -144,8 +144,20 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
       />
       {!removed && (
         <Flex justifyContent="space-between" alignItems="center">
-          <Text>{TranslateString(352, 'APR')}:</Text>
-          <Text bold style={{ display: 'flex', alignItems: 'center' }}>
+          <Text style={{ fontSize: '16px', color: '#858a90', letterSpacing: '1.49px', lineHeight: '1.63' }}>
+            {TranslateString(352, 'APR')}:
+          </Text>
+          <Text
+            bold
+            style={{
+              fontFamily: 'Rubik',
+              display: 'flex',
+              alignItems: 'center',
+              fontSize: '16px',
+              color: '#000000',
+              letterSpacing: '1.49px',
+            }}
+          >
             {farm.apy ? (
               <>
                 <ApyButton
@@ -165,12 +177,18 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
         </Flex>
       )}
       <Flex justifyContent="space-between">
-        <Text>{TranslateString(318, 'Earn')}:</Text>
-        <Text bold>{earnLabel}</Text>
+        <Text style={{ fontSize: '16px', color: '#858a90', letterSpacing: '1.49px', lineHeight: '1.63' }}>
+          {TranslateString(318, 'Earn')}:
+        </Text>
+        <Text bold style={{ fontSize: '16px', color: '#000000', letterSpacing: '1.49px' }}>
+          {earnLabel}
+        </Text>
       </Flex>
       <Flex justifyContent="space-between">
-        <Text style={{ fontSize: '24px' }}>{TranslateString(10001, 'Deposit Fee')}:</Text>
-        <Text bold style={{ fontSize: '24px' }}>
+        <Text bold style={{ fontSize: '16px', color: '#000000', letterSpacing: '1.49px', lineHeight: '1.63' }}>
+          {TranslateString(10001, 'Deposit Fee')}:
+        </Text>
+        <Text bold style={{ fontSize: '16px', color: '#000000', letterSpacing: '1.49px' }}>
           {farm.depositFeeBP / 100}%
         </Text>
       </Flex>

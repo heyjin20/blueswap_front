@@ -3,22 +3,6 @@ import { FarmConfig, QuoteToken } from './types'
 
 const farms: FarmConfig[] = [
   {
-    pid: 1,
-    risk: 5,
-    lpSymbol: 'BLUE-BNB LP',
-    lpAddresses: {
-      97: '',
-      56: '0xadd3fa0d47d6765c6bceae03c205333e1d8be5dc',
-    },
-    tokenSymbol: 'BLUE',
-    tokenAddresses: {
-      97: '',
-      56: '0x111B750C3aBf9835d8c4631DdE0FC7ECd1A60f20',
-    },
-    quoteTokenSymbol: QuoteToken.BNB,
-    quoteTokenAdresses: contracts.wbnb,
-  },
-  {
     pid: 0,
     risk: 5,
     isTokenOnly: true,
@@ -34,6 +18,22 @@ const farms: FarmConfig[] = [
     },
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
+  },
+  {
+    pid: 1,
+    risk: 5,
+    lpSymbol: 'BLUE-BNB LP',
+    lpAddresses: {
+      97: '',
+      56: '0xadd3fa0d47d6765c6bceae03c205333e1d8be5dc',
+    },
+    tokenSymbol: 'BLUE',
+    tokenAddresses: {
+      97: '',
+      56: '0x111B750C3aBf9835d8c4631DdE0FC7ECd1A60f20',
+    },
+    quoteTokenSymbol: QuoteToken.BNB,
+    quoteTokenAdresses: contracts.wbnb,
   },
   // {
   //   pid: 1,

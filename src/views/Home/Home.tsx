@@ -23,7 +23,7 @@ const Hero = styled.div`
   text-align: center;
   height: 200px;
   padding-top: 0;
-  background-position: left center, right center;
+  background-position: center center, center center;
 
   ${({ theme }) => theme.mediaQueries.lg} {
     background-image: url('/images/egg/group-3.png');

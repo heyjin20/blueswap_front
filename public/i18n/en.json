@@ -39,7 +39,7 @@
     {
       "data": {
         "stringId": 292,
-        "text": "Unlock Wallet"
+        "text": "UNLOCK WALLET"
       }
     },
     {
@@ -111,13 +111,13 @@
     {
       "data": {
         "stringId": 316,
-        "text": "Deposit"
+        "text": "DEPOSIT"
       }
     },
     {
       "data": {
         "stringId": 318,
-        "text": "Earn"
+        "text": "EARN"
       }
     },
     {
@@ -207,7 +207,7 @@
     {
       "data": {
         "stringId": 354,
-        "text": "Total Liquidity"
+        "text": "TOTAL LIQUIDITY"
       }
     },
     {
@@ -663,7 +663,7 @@
     {
       "data": {
         "stringId": 540,
-        "text": "New BLUE\/block"
+        "text": "New BLUE/block"
       }
     },
     {
@@ -723,7 +723,7 @@
     {
       "data": {
         "stringId": 562,
-        "text": "Harvest"
+        "text": "HARVEST"
       }
     },
     {
@@ -1215,7 +1215,7 @@
     {
       "data": {
         "stringId": 10001,
-        "text": "Deposit Fee"
+        "text": "DEPOSIT FEE"
       }
     },
     {

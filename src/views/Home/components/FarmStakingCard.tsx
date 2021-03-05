@@ -41,6 +41,7 @@ const Actions = styled.div`
 
 const SubTitle = styled.div`
   font-family: 'Nunito';
+  color: #414859;
 `
 
 const ButtonBackgroundColor = styled.div`
@@ -80,7 +81,6 @@ const FarmedStakingCard = () => {
           <SubTitle>{TranslateString(542, 'Farms & Staking')}</SubTitle>
         </Heading>
         <CardImage src="/images/egg/2.png" alt="cake logo" width={32} height={32} />
-        BLUE TOKEN(PLT TOKEN)
         <Block>
           <Label>{TranslateString(544, 'BLUE to Harvest')}</Label>
           <CakeHarvestBalance earningsSum={earningsSum} />

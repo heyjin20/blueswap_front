@@ -70,10 +70,10 @@ const config: MenuEntry[] = [
         label: 'Docs',
         href: 'https://docs.blueswap.finance/',
       },
-      // {
-      //   label: 'Blog',
-      //   href: 'https://docs.blueswap.finance/',
-      // },
+      {
+        label: 'Blog',
+        href: 'https://medium.com/@palettefinance/',
+      },
     ],
   },
   // {

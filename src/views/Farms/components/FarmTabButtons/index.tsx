@@ -10,7 +10,7 @@ const FarmTabButtons = ({ stakedOnly, setStakedOnly }) => {
 
   return (
     <Wrapper>
-      <ToggleWrapper>
+      <ToggleWrapper style={{ marginRight: '15px' }}>
         <PoolToggle checked={stakedOnly} onChange={() => setStakedOnly(!stakedOnly)} />
         <PoolText> {TranslateString(699, 'Staked only')}</PoolText>
       </ToggleWrapper>
@@ -21,7 +21,6 @@ const FarmTabButtons = ({ stakedOnly, setStakedOnly }) => {
           style={{
             fontFamily: 'Rubik Medium',
             fontWeight: 500,
-            letterSpacing: '1.49px',
             fontSize: '16px',
           }}
         >
@@ -33,7 +32,6 @@ const FarmTabButtons = ({ stakedOnly, setStakedOnly }) => {
           style={{
             fontFamily: 'Rubik Medium',
             fontWeight: 500,
-            letterSpacing: '1.49px',
             fontSize: '16px',
           }}
         >

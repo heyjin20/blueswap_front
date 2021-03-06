@@ -40,7 +40,7 @@ const TotalValueLockedCard = () => {
     <StyledTotalValueLockedCard>
       <CardBody>
         <TvlHeader size="lg" mb="24px">
-          <SubTitle>{TranslateString(999, 'Total Value Locked (TVL)')}</SubTitle>
+          <SubTitle style={{ letterSpacing: 'normal' }}>{TranslateString(999, 'Total Value Locked (TVL)')}</SubTitle>
         </TvlHeader>
         <>
           {/* <Heading size="xl">{`$${tvl}`}</Heading> */}

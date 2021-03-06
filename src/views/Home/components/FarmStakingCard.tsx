@@ -95,7 +95,7 @@ const FarmedStakingCard = () => {
     <StyledFarmStakingCard>
       <CardBody>
         <Heading size="lg" mb="24px">
-          <Title>{TranslateString(542, 'Farms & Staking')}</Title>
+          <Title style={{ letterSpacing: 'normal' }}>{TranslateString(542, 'Farms & Staking')}</Title>
         </Heading>
         <Row>
           <CardImage src="/images/blue/2.png" alt="cake logo" width={32} height={32} />

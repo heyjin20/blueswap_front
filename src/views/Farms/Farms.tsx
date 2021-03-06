@@ -115,7 +115,6 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
       <Page>
         <FarmTabButtons stakedOnly={stakedOnly} setStakedOnly={setStakedOnly} />
         <div>
-          <Divider />
           <FlexLayout>
             <Route exact path={`${path}`}>
               {stakedOnly ? farmsList(stakedOnlyFarms, false) : farmsList(activeFarms, false)}

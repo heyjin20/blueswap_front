@@ -73,7 +73,12 @@ const CardActions: React.FC<FarmCardActionsProps> = ({ farm, ethereum, account }
   return (
     <Action>
       <Flex>
-        <Text textTransform="uppercase" fontSize="12px" pr="3px" style={{ color: '#858a90', letterSpacing: '1.12px' }}>
+        <Text
+          textTransform="uppercase"
+          fontSize="12px"
+          pr="3px"
+          style={{ fontFamily: 'Rubik Regular', color: '#858a90', letterSpacing: '1.12px' }}
+        >
           BLUE
         </Text>
         <Text textTransform="uppercase" fontSize="12px" style={{ color: '#858a90', letterSpacing: '1.12px' }}>

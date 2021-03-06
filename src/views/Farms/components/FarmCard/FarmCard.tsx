@@ -144,13 +144,20 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
       />
       {!removed && (
         <Flex justifyContent="space-between" alignItems="center">
-          <Text style={{ fontSize: '16px', color: '#858a90', letterSpacing: '1.49px', lineHeight: '1.63' }}>
+          <Text
+            style={{
+              fontFamily: 'Rubik Regular',
+              fontSize: '16px',
+              color: '#858a90',
+              letterSpacing: '1.49px',
+              lineHeight: '1.63',
+            }}
+          >
             {TranslateString(352, 'APR')}:
           </Text>
           <Text
-            bold
             style={{
-              fontFamily: 'Rubik',
+              fontFamily: 'Rubik Regular',
               display: 'flex',
               alignItems: 'center',
               fontSize: '16px',
@@ -180,15 +187,15 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
         <Text style={{ fontSize: '16px', color: '#858a90', letterSpacing: '1.49px', lineHeight: '1.63' }}>
           {TranslateString(318, 'Earn')}:
         </Text>
-        <Text bold style={{ fontSize: '16px', color: '#000000', letterSpacing: '1.49px' }}>
+        <Text style={{ fontFamily: 'Rubik Regular', fontSize: '16px', color: '#000000', letterSpacing: '1.49px' }}>
           {earnLabel}
         </Text>
       </Flex>
       <Flex justifyContent="space-between">
-        <Text bold style={{ fontSize: '16px', color: '#000000', letterSpacing: '1.49px', lineHeight: '1.63' }}>
+        <Text style={{ fontSize: '16px', color: '#000000', letterSpacing: '1.49px', lineHeight: '2' }}>
           {TranslateString(10001, 'Deposit Fee')}:
         </Text>
-        <Text bold style={{ fontSize: '16px', color: '#000000', letterSpacing: '1.49px' }}>
+        <Text style={{ fontFamily: 'Rubik Regular', fontSize: '16px', color: '#000000', letterSpacing: '1.49px' }}>
           {farm.depositFeeBP / 100}%
         </Text>
       </Flex>

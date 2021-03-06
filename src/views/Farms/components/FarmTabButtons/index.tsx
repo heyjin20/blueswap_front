@@ -14,11 +14,29 @@ const FarmTabButtons = ({ stakedOnly, setStakedOnly }) => {
         <PoolToggle checked={stakedOnly} onChange={() => setStakedOnly(!stakedOnly)} />
         <PoolText> {TranslateString(699, 'Staked only')}</PoolText>
       </ToggleWrapper>
-      <ButtonMenu activeIndex={isExact ? 0 : 1} size="sm" variant="subtle">
-        <ButtonMenuItem as={Link} to={`${url}`}>
+      <ButtonMenu activeIndex={isExact ? 0 : 1} size="sm" variant="primary">
+        <ButtonMenuItem
+          as={Link}
+          to={`${url}`}
+          style={{
+            fontFamily: 'Rubik Medium',
+            fontWeight: 500,
+            letterSpacing: '1.49px',
+            fontSize: '16px',
+          }}
+        >
           {TranslateString(698, 'Active')}
         </ButtonMenuItem>
-        <ButtonMenuItem as={Link} to={`${url}/history`}>
+        <ButtonMenuItem
+          as={Link}
+          to={`${url}/history`}
+          style={{
+            fontFamily: 'Rubik Medium',
+            fontWeight: 500,
+            letterSpacing: '1.49px',
+            fontSize: '16px',
+          }}
+        >
           {TranslateString(700, 'Inactive')}
         </ButtonMenuItem>
       </ButtonMenu>

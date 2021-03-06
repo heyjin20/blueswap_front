@@ -55,6 +55,7 @@ const DetailsSection: React.FC<ExpandableSectionProps> = ({
           {TranslateString(316, 'Deposit')}:
         </Text>
         <StyledLinkExternal
+          style={{ color: '#0f1318' }}
           href={
             isTokenOnly
               ? `https://exchange.goosedefi.com/#/swap/${tokenAddresses[process.env.REACT_APP_CHAIN_ID]}`

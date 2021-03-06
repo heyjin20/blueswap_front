@@ -1,44 +1,44 @@
 @font-face {
   font-family: 'Rubik Light';
-  src: url('./Fonts/Rubik-Light.ttf') format('truetype');
+  src: url('./fonts/Rubik-Light.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Rubik Regular';
-  src: url('./Fonts/Rubik-Regular.ttf') format('truetype');
+  src: url('./fonts/Rubik-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Rubik Medium';
-  src: url('./Fonts/Rubik-Medium.ttf') format('truetype');
+  src: url('./fonts/Rubik-Medium.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Rubik Bold';
-  src: url('./Fonts/Rubik-Bold.ttf') format('truetype');
+  src: url('./fonts/Rubik-Bold.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Nunito Light';
-  src: url('./Fonts/Nunito-Light.ttf') format('truetype');
+  src: url('./fonts/Nunito-Light.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Nunito';
-  src: url('./Fonts/Rubik-Regular.ttf') format('truetype');
+  src: url('./fonts/Rubik-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Nunito SemiBold';
-  src: url('./Fonts/Nunito-SemiBold.ttf') format('truetype');
+  src: url('./fonts/Nunito-SemiBold.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Nunito Bold';
-  src: url('./Fonts/Rubik-Bold.ttf') format('truetype');
+  src: url('./fonts/Rubik-Bold.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Nunito Black';
-  src: url('./Fonts/Nunito-Black.ttf') format('truetype');
+  src: url('./fonts/Nunito-Black.ttf') format('truetype');
 }

@@ -20,6 +20,12 @@ const Wrapper = styled(Flex)`
 
 const MultiplierTag = styled(Tag)`
   margin-left: 4px;
+  background-color: #334a68;
+  border: 1px solid #334a68;
+  font-family: 'Rubik Regular';
+  letter-spacing: 1.31px;
+  color: #ffffff;
+  font-size: 14px;
 `
 
 const CardHeading: React.FC<ExpandableSectionProps> = ({

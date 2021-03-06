@@ -15,7 +15,7 @@ const MainDiv = styled.div`
 `
 
 const Hero = styled.img`
-  width: 80%;
+  width: 100%;
 `
 
 // const Hero = styled.div`
@@ -71,7 +71,7 @@ const Home: React.FC = () => {
   const TranslateString = useI18n()
 
   Hero.defaultProps = {
-    src: window.innerWidth <= 760 ? '/images/blue/mobile-hero-img.png' : '/images/blue/pc-hero-img.png',
+    src: window.innerWidth <= 760 ? '/images/blue/mobile-main-hero-img.png' : '/images/blue/main-hero-img.png',
   }
 
   return (

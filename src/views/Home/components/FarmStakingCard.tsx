@@ -14,7 +14,6 @@ import useTokenBalance from '../../../hooks/useTokenBalance'
 import { getCakeAddress } from '../../../utils/addressHelpers'
 import useAllEarnings from '../../../hooks/useAllEarnings'
 import { getBalanceNumber } from '../../../utils/formatBalance'
-import '../../../fonts.css'
 
 const StyledFarmStakingCard = styled(Card)`
   border: solid 1px #deecff;

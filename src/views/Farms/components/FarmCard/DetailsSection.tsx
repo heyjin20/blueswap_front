@@ -51,11 +51,11 @@ const DetailsSection: React.FC<ExpandableSectionProps> = ({
   return (
     <Wrapper>
       <Flex justifyContent="space-between">
-        <Text style={{ fontSize: '16px', color: '#858a90', letterSpacing: '1.49px', lineHeight: '1.63' }}>
+        <Text style={{ fontSize: '14px', color: '#858a90', letterSpacing: '1.49px', lineHeight: '1.63' }}>
           {TranslateString(316, 'Deposit')}:
         </Text>
         <StyledLinkExternal
-          style={{ color: '#0f1318' }}
+          style={{ color: '#0f1318', fontSize: '14px', fontWeight: 'normal' }}
           href={
             isTokenOnly
               ? `https://exchange.goosedefi.com/#/swap/${tokenAddresses[process.env.REACT_APP_CHAIN_ID]}`
@@ -67,10 +67,10 @@ const DetailsSection: React.FC<ExpandableSectionProps> = ({
       </Flex>
       {!removed && (
         <Flex justifyContent="space-between">
-          <Text style={{ fontSize: '16px', color: '#858a90', letterSpacing: '1.49px', lineHeight: '1.63' }}>
+          <Text style={{ fontSize: '14px', color: '#858a90', letterSpacing: '1.49px', lineHeight: '1.63' }}>
             {TranslateString(23, 'TOTAL LIQUIDITY')}:
           </Text>
-          <Text bold style={{ fontSize: '16px', color: '#000000', letterSpacing: '1.49px', lineHeight: '1.63' }}>
+          <Text style={{ fontSize: '14px', color: '#000000', letterSpacing: '1.49px', lineHeight: '1.63' }}>
             {totalValueFormated}
           </Text>
         </Flex>

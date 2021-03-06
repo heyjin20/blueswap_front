@@ -1,6 +1,5 @@
 import { MenuEntry } from '@pancakeswap-libs/uikit'
 
-// const EXCHANGE_URL = 'https://exchange.goosedefi.com/';
 const EXCHANGE_URL = 'http://localhost:3001/'
 
 const config: MenuEntry[] = [
@@ -76,16 +75,6 @@ const config: MenuEntry[] = [
       },
     ],
   },
-  // {
-  //   label: 'Audit by Hacken',
-  //   icon: 'AuditIcon',
-  //   href: 'https://www.goosedefi.com/files/hackenAudit.pdf',
-  // },
-  // {
-  //   label: 'Audit by CertiK',
-  //   icon: 'AuditIcon',
-  //   href: 'https://certik.org/projects/goose-finance',
-  // },
 ]
 
 export default config

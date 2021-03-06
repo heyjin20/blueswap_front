@@ -47,7 +47,7 @@ const TotalValueLockedCard = () => {
           {/* <Heading size="xl"> */}
           <TvlValue value={totalValue.toNumber()} prefix="$" decimals={2} />
           {/* </Heading> */}
-          <Text style={{ fontFamily: 'Nunito SemiBold', fontSize: '16px', color: '#414859' }}>
+          <Text style={{ fontFamily: 'Nunito SemiBold', fontSize: '16px', color: '#414859', opacity: '0.4' }}>
             {TranslateString(999, 'Across all Farms and Pools')}
           </Text>
         </>

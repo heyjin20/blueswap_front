@@ -47,7 +47,7 @@ export default FarmTabButtons
 const PoolText = styled(Text)`
   font-family: 'Rubik Medium';
   color: #bbd3f3;
-  letter-spacing: 1.49px;
+  letter-spacing: normal;
   font-weight: 500;
   font-size: 16px;
 `

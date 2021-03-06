@@ -61,7 +61,9 @@ const CakeStats = () => {
     <StyledCakeStats>
       <CardBody>
         <TvlHeader size="lg" mb="24px">
-          <SubTitle style={{ letterSpacing: 'normal' }}>{TranslateString(534, 'BLUE Stats')}</SubTitle>
+          <SubTitle style={{ letterSpacing: 'normal', fontSize: '24px' }}>
+            {TranslateString(534, 'BLUE Stats')}
+          </SubTitle>
         </TvlHeader>
         {/* <Row>
           <DecoratedText fontSize="14px">{TranslateString(10005, 'Market Cap')}</DecoratedText>

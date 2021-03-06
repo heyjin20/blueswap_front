@@ -36,7 +36,9 @@ const TwitterCard = () => {
     <StyledTwitterCard>
       <CardBody>
         <Heading size="lg" mb="24px">
-          <SubTitle style={{ letterSpacing: 'normal' }}>{TranslateString(10003, 'Announcements')}</SubTitle>
+          <SubTitle style={{ letterSpacing: 'normal', fontSize: '24px' }}>
+            {TranslateString(10003, 'Announcements')}
+          </SubTitle>
         </Heading>
         <Timeline
           dataSource={{

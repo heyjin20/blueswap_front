@@ -58,8 +58,8 @@ const DetailsSection: React.FC<ExpandableSectionProps> = ({
           style={{ color: '#0f1318', fontSize: '14px', fontWeight: 'normal' }}
           href={
             isTokenOnly
-              ? `https://exchange.goosedefi.com/#/swap/${tokenAddresses[process.env.REACT_APP_CHAIN_ID]}`
-              : `https://exchange.goosedefi.com/#/add/${liquidityUrlPathParts}`
+              ? `https://exchange.blueswap.finance/#/swap/${tokenAddresses[process.env.REACT_APP_CHAIN_ID]}`
+              : `https://exchange.blueswap.finance/#/add/${liquidityUrlPathParts}`
           }
         >
           {lpLabel}

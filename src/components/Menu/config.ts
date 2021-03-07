@@ -1,6 +1,6 @@
 import { MenuEntry } from '@pancakeswap-libs/uikit'
 
-const EXCHANGE_URL = 'http://localhost:3001/'
+const EXCHANGE_URL = 'https://exchange.blueswap.finance/'
 
 const config: MenuEntry[] = [
   {
@@ -28,9 +28,9 @@ const config: MenuEntry[] = [
     href: '/farms',
   },
   {
-    label: 'Nests',
+    label: 'Pools',
     icon: 'PoolIcon',
-    href: '/nests',
+    href: '/pools',
   },
   // {
   //   label: 'Pools',
